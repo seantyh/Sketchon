@@ -29,6 +29,11 @@ class ValueExpression(object):
     def __init__(self, values):
         self.values = values #disjunction
 
+    def __repr__(self):
+        return "<ValueExpression: {}>".format(
+            self.values
+        )
+
     @staticmethod
     def parse(s,i):
         values = ""
@@ -56,13 +61,18 @@ class AttributeExpression(object):
         self.operator = operator
         self.valueexpr = valueexpression
     
+    def __repr__(self):
+        return "<AttributeExpression: {}, {}, {}>".format(
+            self.attribute, self.operator, self.valueexpr
+        )
+
     @staticmethod
     def parse(s,i):
         while s[i] == " ":
             i +=1
         if s[i] == '"':
             #no attribute and no operator, use defaults:
-            attribute = "word"
+            attribute = "tag"
             operator = "="
         else:
             attribute = ""
@@ -84,13 +94,21 @@ class AttributeExpression(object):
         return AttributeExpression(attribute,operator, valueexpr), i
 
 class TokenExpression(object):
-    def __init__(self, attribexprs=[], interval=None):
+    def __init__(self, attribexprs=[], interval=None, token_number=-1):
+        self.number = token_number
         self.attribexprs = attribexprs
         self.interval = interval
 
     @staticmethod
     def parse(s,i):
         attribexprs = []
+        # peek-ahead
+        if s[i] in "123456789" and s[i+1] == ":":
+            token_number = s[i]
+            i += 2
+        else:
+            token_number = -1
+
         while s[i] == " ":
             i +=1
         if s[i] == '"':
@@ -154,7 +172,7 @@ class TokenExpression(object):
         else:
             interval = None
 
-        return TokenExpression(attribexprs,interval),i
+        return TokenExpression(attribexprs,interval,token_number),i
 
 
     def __len__(self):
@@ -237,6 +255,7 @@ class Query(object):
         """convert the expression into an NFA"""
         finalstate = State(final=True)
         nextstate = finalstate
+        state = None
         for tokenexpr in reversed(self):
             state = tokenexpr.nfa(nextstate)
             nextstate = state
