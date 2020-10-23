@@ -1,0 +1,1 @@
+from .cql import Query as CqlQuery
