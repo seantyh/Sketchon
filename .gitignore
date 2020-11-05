@@ -1,4 +1,6 @@
 
+antlr-*.jar
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,vscode
 
@@ -155,10 +157,6 @@ dmypy.json
 
 ### vscode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,vscode
