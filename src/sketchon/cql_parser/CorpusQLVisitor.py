@@ -1,91 +1,81 @@
-from .cql_parser import CorpusQLParser, CorpusQLVisitor
-from typing import List, Dict
+# Generated from /Users/seantyh/langon/Sketchon/dep/../src/sketchon/cql_parser/CorpusQL.g4 by ANTLR 4.8
+from antlr4 import *
+if __name__ is not None and "." in __name__:
+    from .CorpusQLParser import CorpusQLParser
+else:
+    from CorpusQLParser import CorpusQLParser
 
-Token = Dict[str, str]
-class CqlQuery(CorpusQLVisitor):
-    def __init__(self, tokens: List[Token]):
-        pass
-    
+# This class defines a complete generic visitor for a parse tree produced by CorpusQLParser.
+
+class CorpusQLVisitor(ParseTreeVisitor):
+
     # Visit a parse tree produced by CorpusQLParser#query.
     def visitQuery(self, ctx:CorpusQLParser.QueryContext):
-        print("visitQuery", ctx)
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#complexQuery.
     def visitComplexQuery(self, ctx:CorpusQLParser.ComplexQueryContext):
-        print("visitComplexQuery", ctx)
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#within.
     def visitWithin(self, ctx:CorpusQLParser.WithinContext):
-        raise NotImplementedError("WITHIN keyword is not implemented")
+        return self.visitChildren(ctx)
+
 
     # Visit a parse tree produced by CorpusQLParser#containing.
     def visitContaining(self, ctx:CorpusQLParser.ContainingContext):
-        raise NotImplementedError("CONTAINING keyword is not implemented")
+        return self.visitChildren(ctx)
+
 
     # Visit a parse tree produced by CorpusQLParser#simpleQuery.
     def visitSimpleQuery(self, ctx:CorpusQLParser.SimpleQueryContext):
-        print("visitSimpleQuery")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#sequence.
     def visitSequence(self, ctx:CorpusQLParser.SequenceContext):
-        print("visitSequence")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#sequencePart.
     def visitSequencePart(self, ctx:CorpusQLParser.SequencePartContext):
-        print("visitSequencePart")
-        for child in ctx.children:
-            print("visit child: ", child.__class__.__name__)
-            self.visit(child)
-        return None
+        return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#tag.
     def visitTag(self, ctx:CorpusQLParser.TagContext):
-        print("visitTag")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#attribute.
     def visitAttribute(self, ctx:CorpusQLParser.AttributeContext):
-        print("visitAttribute")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#positionPositionWord.
     def visitPositionPositionWord(self, ctx:CorpusQLParser.PositionPositionWordContext):
-        print("visitPositionPositionWord")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#positionPositionLong.
     def visitPositionPositionLong(self, ctx:CorpusQLParser.PositionPositionLongContext):
-        print("visitPositionPositionLong")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#positionWord.
     def visitPositionWord(self, ctx:CorpusQLParser.PositionWordContext):
-        print("visitPositionWord")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#positionLong.
     def visitPositionLong(self, ctx:CorpusQLParser.PositionLongContext):
-        print("visitPositionLong")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#positionLongPart.
     def visitPositionLongPart(self, ctx:CorpusQLParser.PositionLongPartContext):
-        print("visitPositionLongPart")
         return self.visitChildren(ctx)
 
 
@@ -106,7 +96,6 @@ class CqlQuery(CorpusQLVisitor):
 
     # Visit a parse tree produced by CorpusQLParser#propName.
     def visitPropName(self, ctx:CorpusQLParser.PropNameContext):
-        print("visitPropName")
         return self.visitChildren(ctx)
 
 
@@ -137,8 +126,8 @@ class CqlQuery(CorpusQLVisitor):
 
     # Visit a parse tree produced by CorpusQLParser#quotedString.
     def visitQuotedString(self, ctx:CorpusQLParser.QuotedStringContext):
-        print("visitQuotedString")
         return self.visitChildren(ctx)
+
 
     # Visit a parse tree produced by CorpusQLParser#and.
     def visitAnd(self, ctx:CorpusQLParser.AndContext):
@@ -157,23 +146,23 @@ class CqlQuery(CorpusQLVisitor):
 
     # Visit a parse tree produced by CorpusQLParser#valuePartString.
     def visitValuePartString(self, ctx:CorpusQLParser.ValuePartStringContext):
-        print("visitValuePartString")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#valuePartParenthesised.
     def visitValuePartParenthesised(self, ctx:CorpusQLParser.ValuePartParenthesisedContext):
-        print("visitValuePartParenthesised")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#valueWith.
     def visitValueWith(self, ctx:CorpusQLParser.ValueWithContext):
-        print("visitValueWith")
         return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by CorpusQLParser#valueWithout.
     def visitValueWithout(self, ctx:CorpusQLParser.ValueWithoutContext):
-        print("visitValueWithout")
         return self.visitChildren(ctx)
+
+
+
+del CorpusQLParser

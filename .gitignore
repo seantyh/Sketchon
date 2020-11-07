@@ -1,6 +1,6 @@
 
 antlr-*.jar
-
+data/rules.txt
 # Created by https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,jupyternotebooks,vscode
 
