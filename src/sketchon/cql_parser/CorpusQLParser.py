@@ -1,4 +1,4 @@
-# Generated from /Users/seantyh/langon/Sketchon/dep/../src/sketchon/cql_parser/CorpusQL.g4 by ANTLR 4.8
+# Generated from ../src/sketchon/cql_parser/CorpusQL.g4 by ANTLR 4.9.1
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -164,7 +164,7 @@ class CorpusQLParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.8")
+        self.checkVersion("4.9.1")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -172,6 +172,7 @@ class CorpusQLParser ( Parser ):
 
 
     class QueryContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -219,6 +220,7 @@ class CorpusQLParser ( Parser ):
 
 
     class ComplexQueryContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -285,6 +287,7 @@ class CorpusQLParser ( Parser ):
 
 
     class QueryOperatorContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -382,6 +385,7 @@ class CorpusQLParser ( Parser ):
 
 
     class SimpleQueryContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -448,6 +452,7 @@ class CorpusQLParser ( Parser ):
 
 
     class SequenceContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -509,6 +514,7 @@ class CorpusQLParser ( Parser ):
 
 
     class SequencePartContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -624,6 +630,7 @@ class CorpusQLParser ( Parser ):
 
 
     class TagContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -720,6 +727,7 @@ class CorpusQLParser ( Parser ):
 
 
     class AttributeContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -777,6 +785,7 @@ class CorpusQLParser ( Parser ):
 
 
     class PositionContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -891,6 +900,7 @@ class CorpusQLParser ( Parser ):
 
 
     class PositionWordContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -938,6 +948,7 @@ class CorpusQLParser ( Parser ):
 
 
     class PositionLongContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1004,6 +1015,7 @@ class CorpusQLParser ( Parser ):
 
 
     class PositionLongPartContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1093,6 +1105,7 @@ class CorpusQLParser ( Parser ):
 
 
     class AttValuePairContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1240,6 +1253,7 @@ class CorpusQLParser ( Parser ):
 
 
     class PropNameContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1303,6 +1317,7 @@ class CorpusQLParser ( Parser ):
 
 
     class RepetitionAmountContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1523,6 +1538,7 @@ class CorpusQLParser ( Parser ):
 
 
     class QuotedStringContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1578,6 +1594,7 @@ class CorpusQLParser ( Parser ):
 
 
     class BooleanOperatorContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1703,6 +1720,7 @@ class CorpusQLParser ( Parser ):
 
 
     class ValuePartContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
@@ -1810,6 +1828,7 @@ class CorpusQLParser ( Parser ):
 
 
     class ValueContext(ParserRuleContext):
+        __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
