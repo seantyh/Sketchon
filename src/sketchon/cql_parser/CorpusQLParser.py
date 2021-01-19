@@ -12,7 +12,7 @@ else:
 def serializedATN():
     with StringIO() as buf:
         buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\36")
-        buf.write("\u00b0\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\u00b4\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\3\2\3\2\3\3\3\3\3\3\3\3\5\3/\n\3\3\4\3\4\5")
@@ -24,60 +24,62 @@ def serializedATN():
         buf.write("\fq\n\f\3\r\3\r\3\r\3\r\3\r\3\r\3\r\5\rz\n\r\3\16\3\16")
         buf.write("\3\16\3\16\3\16\3\16\3\16\3\16\3\16\5\16\u0085\n\16\3")
         buf.write("\17\3\17\3\17\5\17\u008a\n\17\3\20\3\20\3\20\3\20\3\20")
-        buf.write("\3\20\3\20\3\20\3\20\3\20\5\20\u0096\n\20\3\20\5\20\u0099")
-        buf.write("\n\20\3\21\3\21\3\22\3\22\3\22\5\22\u00a0\n\22\3\23\3")
-        buf.write("\23\3\23\3\23\3\23\5\23\u00a7\n\23\3\24\3\24\3\24\3\24")
-        buf.write("\3\24\5\24\u00ae\n\24\3\24\2\2\25\2\4\6\b\n\f\16\20\22")
-        buf.write("\24\26\30\32\34\36 \"$&\2\4\3\2\t\n\3\2\13\f\2\u00b8\2")
-        buf.write("(\3\2\2\2\4*\3\2\2\2\6\62\3\2\2\2\b\64\3\2\2\2\n;\3\2")
-        buf.write("\2\2\fA\3\2\2\2\16N\3\2\2\2\20^\3\2\2\2\22h\3\2\2\2\24")
-        buf.write("j\3\2\2\2\26l\3\2\2\2\30y\3\2\2\2\32\u0084\3\2\2\2\34")
-        buf.write("\u0086\3\2\2\2\36\u0098\3\2\2\2 \u009a\3\2\2\2\"\u009f")
-        buf.write("\3\2\2\2$\u00a6\3\2\2\2&\u00ad\3\2\2\2()\5\4\3\2)\3\3")
-        buf.write("\2\2\2*.\5\b\5\2+,\5\6\4\2,-\5\4\3\2-/\3\2\2\2.+\3\2\2")
-        buf.write("\2./\3\2\2\2/\5\3\2\2\2\60\63\7\7\2\2\61\63\7\b\2\2\62")
-        buf.write("\60\3\2\2\2\62\61\3\2\2\2\63\7\3\2\2\2\648\5\n\6\2\65")
-        buf.write("\66\5\"\22\2\66\67\5\b\5\2\679\3\2\2\28\65\3\2\2\289\3")
-        buf.write("\2\2\29\t\3\2\2\2:<\5\f\7\2;:\3\2\2\2<=\3\2\2\2=;\3\2")
-        buf.write("\2\2=>\3\2\2\2>\13\3\2\2\2?@\t\2\2\2@B\7\3\2\2A?\3\2\2")
-        buf.write("\2AB\3\2\2\2BI\3\2\2\2CJ\5\16\b\2DJ\5\22\n\2EF\7\24\2")
-        buf.write("\2FG\5\4\3\2GH\7\25\2\2HJ\3\2\2\2IC\3\2\2\2ID\3\2\2\2")
-        buf.write("IE\3\2\2\2JL\3\2\2\2KM\5\36\20\2LK\3\2\2\2LM\3\2\2\2M")
-        buf.write("\r\3\2\2\2NP\7\16\2\2OQ\7\20\2\2PO\3\2\2\2PQ\3\2\2\2Q")
-        buf.write("R\3\2\2\2RV\7\t\2\2SU\5\20\t\2TS\3\2\2\2UX\3\2\2\2VT\3")
-        buf.write("\2\2\2VW\3\2\2\2WZ\3\2\2\2XV\3\2\2\2Y[\7\20\2\2ZY\3\2")
-        buf.write("\2\2Z[\3\2\2\2[\\\3\2\2\2\\]\7\17\2\2]\17\3\2\2\2^_\7")
-        buf.write("\t\2\2_`\7\21\2\2`a\5 \21\2a\21\3\2\2\2bi\5\24\13\2ce")
-        buf.write("\7\22\2\2df\5\26\f\2ed\3\2\2\2ef\3\2\2\2fg\3\2\2\2gi\7")
-        buf.write("\23\2\2hb\3\2\2\2hc\3\2\2\2i\23\3\2\2\2jk\5 \21\2k\25")
-        buf.write("\3\2\2\2lp\5\30\r\2mn\5\"\22\2no\5\26\f\2oq\3\2\2\2pm")
-        buf.write("\3\2\2\2pq\3\2\2\2q\27\3\2\2\2rz\5\32\16\2st\7\24\2\2")
-        buf.write("tu\5\26\f\2uv\7\25\2\2vz\3\2\2\2wx\7\26\2\2xz\5\30\r\2")
-        buf.write("yr\3\2\2\2ys\3\2\2\2yw\3\2\2\2z\31\3\2\2\2{|\5\34\17\2")
-        buf.write("|}\7\21\2\2}~\5$\23\2~\u0085\3\2\2\2\177\u0080\5\34\17")
-        buf.write("\2\u0080\u0081\7\4\2\2\u0081\u0082\5$\23\2\u0082\u0085")
-        buf.write("\3\2\2\2\u0083\u0085\5$\23\2\u0084{\3\2\2\2\u0084\177")
-        buf.write("\3\2\2\2\u0084\u0083\3\2\2\2\u0085\33\3\2\2\2\u0086\u0089")
-        buf.write("\7\t\2\2\u0087\u0088\7\20\2\2\u0088\u008a\7\t\2\2\u0089")
-        buf.write("\u0087\3\2\2\2\u0089\u008a\3\2\2\2\u008a\35\3\2\2\2\u008b")
-        buf.write("\u0099\7\27\2\2\u008c\u0099\7\30\2\2\u008d\u0099\7\31")
-        buf.write("\2\2\u008e\u008f\7\32\2\2\u008f\u0090\7\n\2\2\u0090\u0099")
-        buf.write("\7\33\2\2\u0091\u0092\7\32\2\2\u0092\u0093\7\n\2\2\u0093")
-        buf.write("\u0095\7\5\2\2\u0094\u0096\7\n\2\2\u0095\u0094\3\2\2\2")
-        buf.write("\u0095\u0096\3\2\2\2\u0096\u0097\3\2\2\2\u0097\u0099\7")
-        buf.write("\33\2\2\u0098\u008b\3\2\2\2\u0098\u008c\3\2\2\2\u0098")
-        buf.write("\u008d\3\2\2\2\u0098\u008e\3\2\2\2\u0098\u0091\3\2\2\2")
-        buf.write("\u0099\37\3\2\2\2\u009a\u009b\t\3\2\2\u009b!\3\2\2\2\u009c")
-        buf.write("\u00a0\7\34\2\2\u009d\u00a0\7\35\2\2\u009e\u00a0\7\6\2")
-        buf.write("\2\u009f\u009c\3\2\2\2\u009f\u009d\3\2\2\2\u009f\u009e")
-        buf.write("\3\2\2\2\u00a0#\3\2\2\2\u00a1\u00a7\5 \21\2\u00a2\u00a3")
-        buf.write("\7\24\2\2\u00a3\u00a4\5&\24\2\u00a4\u00a5\7\25\2\2\u00a5")
-        buf.write("\u00a7\3\2\2\2\u00a6\u00a1\3\2\2\2\u00a6\u00a2\3\2\2\2")
-        buf.write("\u00a7%\3\2\2\2\u00a8\u00a9\5$\23\2\u00a9\u00aa\5\"\22")
-        buf.write("\2\u00aa\u00ab\5&\24\2\u00ab\u00ae\3\2\2\2\u00ac\u00ae")
-        buf.write("\5$\23\2\u00ad\u00a8\3\2\2\2\u00ad\u00ac\3\2\2\2\u00ae")
-        buf.write("\'\3\2\2\2\27.\628=AILPVZehpy\u0084\u0089\u0095\u0098")
-        buf.write("\u009f\u00a6\u00ad")
+        buf.write("\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\5\20\u009a")
+        buf.write("\n\20\3\20\5\20\u009d\n\20\3\21\3\21\3\22\3\22\3\22\5")
+        buf.write("\22\u00a4\n\22\3\23\3\23\3\23\3\23\3\23\5\23\u00ab\n\23")
+        buf.write("\3\24\3\24\3\24\3\24\3\24\5\24\u00b2\n\24\3\24\2\2\25")
+        buf.write("\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \"$&\2\4\3\2\t")
+        buf.write("\n\3\2\13\f\2\u00bc\2(\3\2\2\2\4*\3\2\2\2\6\62\3\2\2\2")
+        buf.write("\b\64\3\2\2\2\n;\3\2\2\2\fA\3\2\2\2\16N\3\2\2\2\20^\3")
+        buf.write("\2\2\2\22h\3\2\2\2\24j\3\2\2\2\26l\3\2\2\2\30y\3\2\2\2")
+        buf.write("\32\u0084\3\2\2\2\34\u0086\3\2\2\2\36\u009c\3\2\2\2 \u009e")
+        buf.write("\3\2\2\2\"\u00a3\3\2\2\2$\u00aa\3\2\2\2&\u00b1\3\2\2\2")
+        buf.write("()\5\4\3\2)\3\3\2\2\2*.\5\b\5\2+,\5\6\4\2,-\5\4\3\2-/")
+        buf.write("\3\2\2\2.+\3\2\2\2./\3\2\2\2/\5\3\2\2\2\60\63\7\7\2\2")
+        buf.write("\61\63\7\b\2\2\62\60\3\2\2\2\62\61\3\2\2\2\63\7\3\2\2")
+        buf.write("\2\648\5\n\6\2\65\66\5\"\22\2\66\67\5\b\5\2\679\3\2\2")
+        buf.write("\28\65\3\2\2\289\3\2\2\29\t\3\2\2\2:<\5\f\7\2;:\3\2\2")
+        buf.write("\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\13\3\2\2\2?@\t\2\2\2")
+        buf.write("@B\7\3\2\2A?\3\2\2\2AB\3\2\2\2BI\3\2\2\2CJ\5\16\b\2DJ")
+        buf.write("\5\22\n\2EF\7\24\2\2FG\5\4\3\2GH\7\25\2\2HJ\3\2\2\2IC")
+        buf.write("\3\2\2\2ID\3\2\2\2IE\3\2\2\2JL\3\2\2\2KM\5\36\20\2LK\3")
+        buf.write("\2\2\2LM\3\2\2\2M\r\3\2\2\2NP\7\16\2\2OQ\7\20\2\2PO\3")
+        buf.write("\2\2\2PQ\3\2\2\2QR\3\2\2\2RV\7\t\2\2SU\5\20\t\2TS\3\2")
+        buf.write("\2\2UX\3\2\2\2VT\3\2\2\2VW\3\2\2\2WZ\3\2\2\2XV\3\2\2\2")
+        buf.write("Y[\7\20\2\2ZY\3\2\2\2Z[\3\2\2\2[\\\3\2\2\2\\]\7\17\2\2")
+        buf.write("]\17\3\2\2\2^_\7\t\2\2_`\7\21\2\2`a\5 \21\2a\21\3\2\2")
+        buf.write("\2bi\5\24\13\2ce\7\22\2\2df\5\26\f\2ed\3\2\2\2ef\3\2\2")
+        buf.write("\2fg\3\2\2\2gi\7\23\2\2hb\3\2\2\2hc\3\2\2\2i\23\3\2\2")
+        buf.write("\2jk\5 \21\2k\25\3\2\2\2lp\5\30\r\2mn\5\"\22\2no\5\26")
+        buf.write("\f\2oq\3\2\2\2pm\3\2\2\2pq\3\2\2\2q\27\3\2\2\2rz\5\32")
+        buf.write("\16\2st\7\24\2\2tu\5\26\f\2uv\7\25\2\2vz\3\2\2\2wx\7\26")
+        buf.write("\2\2xz\5\30\r\2yr\3\2\2\2ys\3\2\2\2yw\3\2\2\2z\31\3\2")
+        buf.write("\2\2{|\5\34\17\2|}\7\21\2\2}~\5$\23\2~\u0085\3\2\2\2\177")
+        buf.write("\u0080\5\34\17\2\u0080\u0081\7\4\2\2\u0081\u0082\5$\23")
+        buf.write("\2\u0082\u0085\3\2\2\2\u0083\u0085\5$\23\2\u0084{\3\2")
+        buf.write("\2\2\u0084\177\3\2\2\2\u0084\u0083\3\2\2\2\u0085\33\3")
+        buf.write("\2\2\2\u0086\u0089\7\t\2\2\u0087\u0088\7\20\2\2\u0088")
+        buf.write("\u008a\7\t\2\2\u0089\u0087\3\2\2\2\u0089\u008a\3\2\2\2")
+        buf.write("\u008a\35\3\2\2\2\u008b\u008c\7\27\2\2\u008c\u009d\b\20")
+        buf.write("\1\2\u008d\u008e\7\30\2\2\u008e\u009d\b\20\1\2\u008f\u0090")
+        buf.write("\7\31\2\2\u0090\u009d\b\20\1\2\u0091\u0092\7\32\2\2\u0092")
+        buf.write("\u0093\7\n\2\2\u0093\u0094\7\33\2\2\u0094\u009d\b\20\1")
+        buf.write("\2\u0095\u0096\7\32\2\2\u0096\u0097\7\n\2\2\u0097\u0099")
+        buf.write("\7\5\2\2\u0098\u009a\7\n\2\2\u0099\u0098\3\2\2\2\u0099")
+        buf.write("\u009a\3\2\2\2\u009a\u009b\3\2\2\2\u009b\u009d\7\33\2")
+        buf.write("\2\u009c\u008b\3\2\2\2\u009c\u008d\3\2\2\2\u009c\u008f")
+        buf.write("\3\2\2\2\u009c\u0091\3\2\2\2\u009c\u0095\3\2\2\2\u009d")
+        buf.write("\37\3\2\2\2\u009e\u009f\t\3\2\2\u009f!\3\2\2\2\u00a0\u00a4")
+        buf.write("\7\34\2\2\u00a1\u00a4\7\35\2\2\u00a2\u00a4\7\6\2\2\u00a3")
+        buf.write("\u00a0\3\2\2\2\u00a3\u00a1\3\2\2\2\u00a3\u00a2\3\2\2\2")
+        buf.write("\u00a4#\3\2\2\2\u00a5\u00ab\5 \21\2\u00a6\u00a7\7\24\2")
+        buf.write("\2\u00a7\u00a8\5&\24\2\u00a8\u00a9\7\25\2\2\u00a9\u00ab")
+        buf.write("\3\2\2\2\u00aa\u00a5\3\2\2\2\u00aa\u00a6\3\2\2\2\u00ab")
+        buf.write("%\3\2\2\2\u00ac\u00ad\5$\23\2\u00ad\u00ae\5\"\22\2\u00ae")
+        buf.write("\u00af\5&\24\2\u00af\u00b2\3\2\2\2\u00b0\u00b2\5$\23\2")
+        buf.write("\u00b1\u00ac\3\2\2\2\u00b1\u00b0\3\2\2\2\u00b2\'\3\2\2")
+        buf.write("\2\27.\628=AILPVZehpy\u0084\u0089\u0099\u009c\u00a3\u00aa")
+        buf.write("\u00b1")
         return buf.getvalue()
 
 
@@ -1021,44 +1023,95 @@ class CorpusQLParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def attValuePair(self):
-            return self.getTypedRuleContext(CorpusQLParser.AttValuePairContext,0)
-
-
-        def LEFT_PARENTHESIS(self):
-            return self.getToken(CorpusQLParser.LEFT_PARENTHESIS, 0)
-
-        def positionLong(self):
-            return self.getTypedRuleContext(CorpusQLParser.PositionLongContext,0)
-
-
-        def RIGHT_PARENTHESIS(self):
-            return self.getToken(CorpusQLParser.RIGHT_PARENTHESIS, 0)
-
-        def EXCLAMATION_MARK(self):
-            return self.getToken(CorpusQLParser.EXCLAMATION_MARK, 0)
-
-        def positionLongPart(self):
-            return self.getTypedRuleContext(CorpusQLParser.PositionLongPartContext,0)
-
 
         def getRuleIndex(self):
             return CorpusQLParser.RULE_positionLongPart
 
+     
+        def copyFrom(self, ctx:ParserRuleContext):
+            super().copyFrom(ctx)
+
+
+
+    class PositionLongPartParenthesisedContext(PositionLongPartContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CorpusQLParser.PositionLongPartContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def LEFT_PARENTHESIS(self):
+            return self.getToken(CorpusQLParser.LEFT_PARENTHESIS, 0)
+        def positionLong(self):
+            return self.getTypedRuleContext(CorpusQLParser.PositionLongContext,0)
+
+        def RIGHT_PARENTHESIS(self):
+            return self.getToken(CorpusQLParser.RIGHT_PARENTHESIS, 0)
+
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterPositionLongPart" ):
-                listener.enterPositionLongPart(self)
+            if hasattr( listener, "enterPositionLongPartParenthesised" ):
+                listener.enterPositionLongPartParenthesised(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitPositionLongPart" ):
-                listener.exitPositionLongPart(self)
+            if hasattr( listener, "exitPositionLongPartParenthesised" ):
+                listener.exitPositionLongPartParenthesised(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitPositionLongPart" ):
-                return visitor.visitPositionLongPart(self)
+            if hasattr( visitor, "visitPositionLongPartParenthesised" ):
+                return visitor.visitPositionLongPartParenthesised(self)
             else:
                 return visitor.visitChildren(self)
 
+
+    class PositionLongPartNegatedContext(PositionLongPartContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CorpusQLParser.PositionLongPartContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def EXCLAMATION_MARK(self):
+            return self.getToken(CorpusQLParser.EXCLAMATION_MARK, 0)
+        def positionLongPart(self):
+            return self.getTypedRuleContext(CorpusQLParser.PositionLongPartContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPositionLongPartNegated" ):
+                listener.enterPositionLongPartNegated(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPositionLongPartNegated" ):
+                listener.exitPositionLongPartNegated(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPositionLongPartNegated" ):
+                return visitor.visitPositionLongPartNegated(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+    class PositionLongPartAttValuePairContext(PositionLongPartContext):
+
+        def __init__(self, parser, ctx:ParserRuleContext): # actually a CorpusQLParser.PositionLongPartContext
+            super().__init__(parser)
+            self.copyFrom(ctx)
+
+        def attValuePair(self):
+            return self.getTypedRuleContext(CorpusQLParser.AttValuePairContext,0)
+
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterPositionLongPartAttValuePair" ):
+                listener.enterPositionLongPartAttValuePair(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitPositionLongPartAttValuePair" ):
+                listener.exitPositionLongPartAttValuePair(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPositionLongPartAttValuePair" ):
+                return visitor.visitPositionLongPartAttValuePair(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1071,12 +1124,14 @@ class CorpusQLParser ( Parser ):
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
+                localctx = CorpusQLParser.PositionLongPartAttValuePairContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
                 self.state = 112
                 self.attValuePair()
                 pass
 
             elif la_ == 2:
+                localctx = CorpusQLParser.PositionLongPartParenthesisedContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
                 self.state = 113
                 self.match(CorpusQLParser.LEFT_PARENTHESIS)
@@ -1087,6 +1142,7 @@ class CorpusQLParser ( Parser ):
                 pass
 
             elif la_ == 3:
+                localctx = CorpusQLParser.PositionLongPartNegatedContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
                 self.state = 117
                 self.match(CorpusQLParser.EXCLAMATION_MARK)
@@ -1392,14 +1448,15 @@ class CorpusQLParser ( Parser ):
 
         def __init__(self, parser, ctx:ParserRuleContext): # actually a CorpusQLParser.RepetitionAmountContext
             super().__init__(parser)
+            self.n = None # Token
             self.copyFrom(ctx)
 
         def LEFT_CURLY_BRACKET(self):
             return self.getToken(CorpusQLParser.LEFT_CURLY_BRACKET, 0)
-        def NUMBER(self):
-            return self.getToken(CorpusQLParser.NUMBER, 0)
         def LEFT_RIGHT_BRACKET(self):
             return self.getToken(CorpusQLParser.LEFT_RIGHT_BRACKET, 0)
+        def NUMBER(self):
+            return self.getToken(CorpusQLParser.NUMBER, 0)
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRepetitionExactly" ):
@@ -1471,7 +1528,7 @@ class CorpusQLParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_repetitionAmount)
         self._la = 0 # Token type
         try:
-            self.state = 150
+            self.state = 154
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
             if la_ == 1:
@@ -1479,51 +1536,55 @@ class CorpusQLParser ( Parser ):
                 self.enterOuterAlt(localctx, 1)
                 self.state = 137
                 self.match(CorpusQLParser.ASTERISK)
+                setattr(localctx.parentCtx, "quant", (0, None))
                 pass
 
             elif la_ == 2:
                 localctx = CorpusQLParser.RepetitionOneOrMoreContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 138
+                self.state = 139
                 self.match(CorpusQLParser.PLUS)
+                setattr(localctx.parentCtx, "quant", (1, None))
                 pass
 
             elif la_ == 3:
                 localctx = CorpusQLParser.RepetitionZeroOrOneContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
-                self.state = 139
+                self.state = 141
                 self.match(CorpusQLParser.QUESTION_MARK)
+                setattr(localctx.parentCtx, "quant", (0, 1))
                 pass
 
             elif la_ == 4:
                 localctx = CorpusQLParser.RepetitionExactlyContext(self, localctx)
                 self.enterOuterAlt(localctx, 4)
-                self.state = 140
+                self.state = 143
                 self.match(CorpusQLParser.LEFT_CURLY_BRACKET)
-                self.state = 141
-                self.match(CorpusQLParser.NUMBER)
-                self.state = 142
+                self.state = 144
+                localctx.n = self.match(CorpusQLParser.NUMBER)
+                self.state = 145
                 self.match(CorpusQLParser.LEFT_RIGHT_BRACKET)
+                setattr(localctx.parentCtx, "quant", (int(n.text), int(n.text)))
                 pass
 
             elif la_ == 5:
                 localctx = CorpusQLParser.RepetitionMinMaxContext(self, localctx)
                 self.enterOuterAlt(localctx, 5)
-                self.state = 143
-                self.match(CorpusQLParser.LEFT_CURLY_BRACKET)
-                self.state = 144
-                self.match(CorpusQLParser.NUMBER)
-                self.state = 145
-                self.match(CorpusQLParser.T__2)
                 self.state = 147
+                self.match(CorpusQLParser.LEFT_CURLY_BRACKET)
+                self.state = 148
+                self.match(CorpusQLParser.NUMBER)
+                self.state = 149
+                self.match(CorpusQLParser.T__2)
+                self.state = 151
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if _la==CorpusQLParser.NUMBER:
-                    self.state = 146
+                    self.state = 150
                     self.match(CorpusQLParser.NUMBER)
 
 
-                self.state = 149
+                self.state = 153
                 self.match(CorpusQLParser.LEFT_RIGHT_BRACKET)
                 pass
 
@@ -1577,7 +1638,7 @@ class CorpusQLParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 152
+            self.state = 156
             _la = self._input.LA(1)
             if not(_la==CorpusQLParser.DOUBLE_QUOTED_STRING or _la==CorpusQLParser.SINGLE_QUOTED_STRING):
                 self._errHandler.recoverInline(self)
@@ -1686,25 +1747,25 @@ class CorpusQLParser ( Parser ):
         localctx = CorpusQLParser.BooleanOperatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_booleanOperator)
         try:
-            self.state = 157
+            self.state = 161
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [CorpusQLParser.AMPERSAND]:
                 localctx = CorpusQLParser.AndContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 154
+                self.state = 158
                 self.match(CorpusQLParser.AMPERSAND)
                 pass
             elif token in [CorpusQLParser.VERTICAL_LINE]:
                 localctx = CorpusQLParser.OrContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 155
+                self.state = 159
                 self.match(CorpusQLParser.VERTICAL_LINE)
                 pass
             elif token in [CorpusQLParser.T__3]:
                 localctx = CorpusQLParser.ImplicationContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
-                self.state = 156
+                self.state = 160
                 self.match(CorpusQLParser.T__3)
                 pass
             else:
@@ -1796,23 +1857,23 @@ class CorpusQLParser ( Parser ):
         localctx = CorpusQLParser.ValuePartContext(self, self._ctx, self.state)
         self.enterRule(localctx, 34, self.RULE_valuePart)
         try:
-            self.state = 164
+            self.state = 168
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [CorpusQLParser.DOUBLE_QUOTED_STRING, CorpusQLParser.SINGLE_QUOTED_STRING]:
                 localctx = CorpusQLParser.ValuePartStringContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 159
+                self.state = 163
                 self.quotedString()
                 pass
             elif token in [CorpusQLParser.LEFT_PARENTHESIS]:
                 localctx = CorpusQLParser.ValuePartParenthesisedContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 160
+                self.state = 164
                 self.match(CorpusQLParser.LEFT_PARENTHESIS)
-                self.state = 161
+                self.state = 165
                 self.value()
-                self.state = 162
+                self.state = 166
                 self.match(CorpusQLParser.RIGHT_PARENTHESIS)
                 pass
             else:
@@ -1906,24 +1967,24 @@ class CorpusQLParser ( Parser ):
         localctx = CorpusQLParser.ValueContext(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_value)
         try:
-            self.state = 171
+            self.state = 175
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
             if la_ == 1:
                 localctx = CorpusQLParser.ValueWithContext(self, localctx)
                 self.enterOuterAlt(localctx, 1)
-                self.state = 166
+                self.state = 170
                 self.valuePart()
-                self.state = 167
+                self.state = 171
                 self.booleanOperator()
-                self.state = 168
+                self.state = 172
                 self.value()
                 pass
 
             elif la_ == 2:
                 localctx = CorpusQLParser.ValueWithoutContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
-                self.state = 170
+                self.state = 174
                 self.valuePart()
                 pass
 

@@ -61,7 +61,10 @@ positionWord:       quotedString;
 
 positionLong:       positionLongPart (booleanOperator positionLong)? ;
 
-positionLongPart:   attValuePair | '(' positionLong ')' | '!' positionLongPart ;
+positionLongPart:   attValuePair                # positionLongPartAttValuePair
+                    | '(' positionLong ')'      # positionLongPartParenthesised                    
+                    | '!' positionLongPart      # positionLongPartNegated
+                    ;
 
 attValuePair:       propName '=' valuePart      # attValuePairEquals
                     | propName '!=' valuePart   # attValuePairNotEquals
@@ -70,10 +73,13 @@ attValuePair:       propName '=' valuePart      # attValuePairEquals
 
 propName:           NAME ('/' NAME)? ;
 
-repetitionAmount:   '*'                             # repetitionZeroOrMore
-                    | '+'                           # repetitionOneOrMore
-                    | '?'                           # repetitionZeroOrOne
-                    | '{' NUMBER '}'                # repetitionExactly
+repetitionAmount:   '*'                            {setattr($ctx.parentCtx, "quant", (0, None))}  
+                                                    # repetitionZeroOrMore
+                    | '+'                          {setattr($ctx.parentCtx, "quant", (1, None))}  
+                                                    # repetitionOneOrMore
+                    | '?'                          {setattr($ctx.parentCtx, "quant", (0, 1))}
+                                                    # repetitionZeroOrOne
+                    | '{' NUMBER '}'              # repetitionExactly
                     | '{' NUMBER ',' NUMBER? '}'    # repetitionMinMax
                     ;
 
